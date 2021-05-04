@@ -1,0 +1,242 @@
+  
+    <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+  
+    <html>
+  
+      <head>
+  
+      <title></title>
+  
+      <script type="text/javascript">
+  
+    
+      function animate_tab(menuId){
+  
+      
+  
+        var no_of_tabs = 4+1;
+  
+        
+  
+        for(i = 1; i < no_of_tabs; i++){
+  
+          
+  
+            menu_id = "menu-0"+i.toString();
+  
+            tab_id  = "tab-0"+i.toString();
+  
+            
+  
+            
+  
+            if(menu_id == menuId){
+  
+            
+  
+              document.getElementById(menu_id).className  = 'selected';
+  
+              document.getElementById(tab_id).style.display = 'block';
+  
+            }
+  
+            else{
+  
+              document.getElementById(menu_id).className  = 'unselected';
+  
+              document.getElementById(tab_id).style.display = 'none';
+  
+            }
+  
+        }
+  
+      
+  
+      }
+  
+      </script>
+  
+       <style type="text/css">
+  
+          body{
+  
+            background-color:#000000;
+  
+          }
+  
+          
+  
+          /* -- tab menu -- */
+  
+          #tab-menu ul li{
+  
+    
+  
+          list-style: none;
+  
+          position: relative;
+  
+          float: left;
+  
+          width:150px;
+  
+          height: 50px;
+  
+          text-align: center;    
+  
+          line-height: 50px;
+  
+       
+  
+        }
+  
+  
+  
+        #tab-menu li a{
+  
+          text-decoration:none;
+  
+          color: #ffffff;
+  
+        }
+  
+        
+  
+        /* -- end of tab menu --*/
+  
+        
+  
+        /* -- tab content -- */
+  
+        
+  
+        #tab-content{
+  
+          border: 1px solid #ffffff; 
+  
+          background-color: #cc99cc;
+  
+          width:650px;
+  
+          height: auto;
+  
+          margin-left:40px;
+  
+          padding: 10px 10px 10px 10px;
+  
+          clear:both;
+  
+       
+  
+        }
+  
+        
+  
+       #tab-01{
+  
+        display:none;
+  
+       }
+  
+       #tab-02{
+  
+        display:block;
+  
+       }
+  
+       #tab-03{
+  
+        display:none;
+  
+       }
+  
+       #tab-04{
+  
+        display:none;
+  
+       }
+  
+       
+  
+       .selected{
+  
+        top:1px;
+  
+        background-image:url(images/menu-image.png) ;
+  
+       }
+  
+       .unselected{
+  
+        background-image:url(images/menu-image-unselect.png) ;
+  
+       }
+  
+          
+  
+        /* -- end of tab content -- */
+  
+       </style>
+  
+      </head>
+  
+      <body>
+  
+        <div id="tab-menu">
+  
+         
+  
+        <ul>
+  
+        <li id="menu-01" class="unselected"><a href="javascript:void(0);" onClick="animate_tab('menu-01');">Tab 01</a></li>
+  
+        <li id="menu-02" class="selected"><a href="javascript:void(0);" onClick="animate_tab('menu-02');">Tab 02</a></li>
+  
+        <li id="menu-03" class="unselected"><a href="javascript:void(0);" onClick="animate_tab('menu-03');">Tab 03</a></li>
+  
+        <li id="menu-04" class="unselected"><a href="javascript:void(0);" onClick="animate_tab('menu-04');">Tab 04</a></li>
+  
+        </ul>
+  
+        
+  
+        <div id="tab-content">
+  
+         <div id="tab-01">
+  
+          Content in Tab 01 goes here.
+  
+         </div>
+  
+         
+  
+         <div id="tab-02">
+  
+          Content in Tab 02 goes here.
+  
+         </div>
+  
+         
+  
+         <div id="tab-03">
+  
+          Content in Tab 03 goes here.
+  
+         </div>
+  
+         
+  
+         <div id="tab-04">
+  
+          Content in Tab 04 goes here.
+  
+         </div>
+  
+      </div>
+  
+      </div>
+  
+      </body>
+  
+    </html>
+  
