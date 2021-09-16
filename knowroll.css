@@ -1,0 +1,12 @@
+@charset "utf-8";
+/* CSS Document */
+#form1
+{
+	vertical-align:central;
+}
+
+#submitbtn {
+	background-color: #FFF;
+	background-image: none;
+	background-repeat: no-repeat;
+}
