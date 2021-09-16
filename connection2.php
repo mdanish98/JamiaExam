@@ -1,4 +1,4 @@
 <?php
-$conninfo=array("UID"=>"ceo","PWD"=>"ceo2111","Database"=>"examdemo","ReturnDatesAsStrings"=>"true" );
-$con=sqlsrv_connect("10.35.0.101",$conninfo) or die("Unable to connect");
+$conninfo=array("UID"=>"","PWD"=>"","Database"=>"","ReturnDatesAsStrings"=>"true" );
+$con=sqlsrv_connect("",$conninfo) or die("Unable to connect");
 ?>
